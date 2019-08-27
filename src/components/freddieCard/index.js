@@ -5,25 +5,16 @@ import "./style.css";
 
 function freddieCard(props) {
     return (
-        <div>
-            {/* <Jumbotron fluid>
-                <Container>
-                    <h1>Fluid jumbotron</h1>
-                    <p>
-                        This is a modified jumbotron that occupies the entire horizontal space of
-                        its parent.
-    </p>
-                </Container>
-            </Jumbotron> */}
-            <div className="card" style={{ width: '25rem' }} >
-                <div className="container">
-                    <img alt={props.name} src={props.image} />
-                </div>
-                <span onClick={() => props.removeFreddie(props.id)} className="remove">
-                    x
-            </span>
+   
+            <div className="col">
+             
+
+                    <img onClick={() => props.clickCount(props.id)} style={{ width: '25rem', height: '25rem', margin:"10px" }} alt={props.name} src={props.image} />
+
+
+               
             </div>
-        </div>
+     
     );
 }
 
