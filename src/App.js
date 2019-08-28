@@ -3,7 +3,6 @@ import FreddieCard from "./components/freddieCard";
 import Wrapper from "./components/wrapper";
 import Title from "./components/title";
 import freddie from "./freddie.json";
-import "./App.css";
 import Jumbotron from 'react-bootstrap/Jumbotron'
 
 class App extends Component {
@@ -29,12 +28,7 @@ class App extends Component {
     this.setState({ score: 0 });
   }
 
-  // removeFreddie = id => {
-  //   // Filter this.state.friends for friends with an id not equal to the id being removed
-  //   const freddie = this.state.freddie.filter(freddie => freddie.id !== id);
-  //   // Set this.state.friends equal to the new friends array
-  //   this.setState({ freddie });
-  // }
+
   clickCount = id => {
 
     console.log("clicked image id: ", id)
@@ -78,8 +72,8 @@ class App extends Component {
       <div>
 
         <Wrapper>
-          <Jumbotron fluid>
-
+          <Jumbotron fluid id="jumbotron">
+            <Title>Freddie List: Current Score: {this.state.score} | Top Score: {this.state.highscore}</Title>
             <h1>Fluid jumbotron</h1>
             <p>
               This is a modified jumbotron that occupies the entire horizontal space of
@@ -87,7 +81,6 @@ class App extends Component {
     </p>
 
           </Jumbotron>
-          <Title>Freddie List: {this.state.score} | {this.state.highscore}</Title>
           <div className="row">
             {this.state.freddie.map(freddie => (
 

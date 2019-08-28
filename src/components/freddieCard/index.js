@@ -9,7 +9,7 @@ function freddieCard(props) {
             <div className="col">
              
 
-                    <img onClick={() => props.clickCount(props.id)} style={{ width: '25rem', height: '25rem', margin:"10px" }} alt={props.name} src={props.image} />
+                    <img onClick={() => props.clickCount(props.id)} style={{ width: '10rem', height: '10rem', margin:"10px" }} alt={props.name} src={props.image} />
 
 
                

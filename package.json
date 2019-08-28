@@ -2,7 +2,7 @@
   "name": "clicky",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/dlentz92/clickyGame",
+  "homepage": "https://github.com/dlentz92/React_Clicky_Game-Freddie_Mercury-",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "react": "^16.9.0",
