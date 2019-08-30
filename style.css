@@ -1,0 +1,6 @@
+/* .BoheMovie{
+    backgroundImage: url("./src/components/images/boheMovie.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    backgroundImage: `url(${boheMovie})`;
+  } */

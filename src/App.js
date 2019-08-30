@@ -4,6 +4,8 @@ import Wrapper from "./components/wrapper";
 import Title from "./components/title";
 import freddie from "./freddie.json";
 import { Jumbotron } from "./components/Jumbotron"
+import boheMovie from "./components/images/boheMovie.jpg"
+
 
 class App extends Component {
   // Setting this.state.friends to the friends json array
@@ -70,26 +72,30 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Jumbotron/>
-        <Wrapper>
-        <Title>Freddie List: Current Score: {this.state.score} | Top Score: {this.state.highscore}</Title>
-          <div className="row">
-            {this.state.freddie.map(freddie => (
-              <FreddieCard
-                clickCount={this.clickCount}
-                id={freddie.id}
-                key={freddie.id}
-                image={freddie.image}
-              />
-            ))}
+        <Jumbotron />
+        <div>
+          <div>
+            <Wrapper>
+              <Title>Freddie List: Current Score: {this.state.score} | Top Score: {this.state.highscore}</Title>
+              <div className="row">
+                {this.state.freddie.map(freddie => (
+                  <FreddieCard
+                    clickCount={this.clickCount}
+                    id={freddie.id}
+                    key={freddie.id}
+                    image={freddie.image}
+                  />
+                ))}
+              </div>
+            </Wrapper>
           </div>
-        </Wrapper>
+        </div>
       </div>
     );
   }
 }
-const styles= {
-  container : {
+const styles = {
+  container: {
     backgroundImage: 'url'
   }
 }
